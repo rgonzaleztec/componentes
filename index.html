@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Escape Room - El Caos de FoodRocket</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #222;
+      color: #eee;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      color: #ffcc00;
+      text-align: center;
+    }
+    section {
+      background: #333;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin: 2rem auto;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    h2 {
+      color: #66d9ef;
+    }
+    pre {
+      background: #111;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+      color: #a6e22e;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔐 Escape Room – El Caos de FoodRocket</h1>
+  <p style="text-align:center">Resuelve los desafíos de diseño para liberar el sistema.</p>
+
+  <section>
+    <h2>📂 Sala 1: Casos de Uso</h2>
+    <p>Analiza este caso de uso mal definido y propón un rediseño claro, funcional y estructurado:</p>
+    <pre>
+Caso de Uso: Gestionar Pedido
+Actor: Cliente
+Descripción: El cliente hace un pedido y espera que llegue.
+    </pre>
+    <p>Rediseña incluyendo flujo principal, alternativos y responsabilidades claras.</p>
+  </section>
+
+  <section>
+    <h2>🧩 Sala 2: Componentes</h2>
+    <p>Observa estos componentes con múltiples responsabilidades. ¿Cómo los modularizarías?</p>
+    <pre>
+Componente: PedidoManager
+- Crear pedido
+- Validar usuario
+- Procesar pago
+- Enviar notificación
+    </pre>
+    <p>Divide en componentes separados aplicando cohesión.</p>
+  </section>
+
+  <section>
+    <h2>🌐 Sala 3: Servicios</h2>
+    <p>Evalúa esta API actual e identifica problemas:</p>
+    <pre>
+POST /gestion
+GET /consulta
+POST /accion
+    </pre>
+    <p>Proponé endpoints REST coherentes y bien nombrados.</p>
+  </section>
+
+  <section>
+    <h2>📘 Sala 4: Principios GRASP</h2>
+    <p>Aplica 3 principios de GRASP al siguiente escenario:</p>
+    <pre>
+Clase Usuario crea Pedido, gestiona Pago, y notifica Estado.
+    </pre>
+    <p>Aplica: Creator, Controller, Low Coupling.</p>
+  </section>
+</body>
+</html>
